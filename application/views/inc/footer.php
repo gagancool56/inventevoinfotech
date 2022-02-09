@@ -1,37 +1,25 @@
-<!-- ======= Footer ======= -->
-<footer id="footer">
-    <div class="container">
-        <h3><?= business_info('buname') ?></h3>
-        <h4>We will help you send your wishes to your loved ones.</h4>
-        <div class="social-links">
-            <a href="<?= social_media_links('twitter') ?>" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="<?= social_media_links('facebook') ?>" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="<?= social_media_links('instagram') ?>" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="<?= social_media_links('skype') ?>" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
-            <a href="<?= social_media_links('linkedin') ?>" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-        <div class="copyright">
-            &copy; Copyright <strong><span><?= business_info('buname') . ' ' . date('Y') ?></span></strong>. All Rights Reserved
-        </div>
-    </div>
-    </div>
-</footer><!-- End Footer -->
+  <!-- Footer-->
+  <footer class="footer py-4">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-4 text-lg-start">Copyright &copy; <?= business_info('buname') . ' ' . date('Y') ?> </div>
+              <div class="col-lg-4 my-3 my-lg-0">
+                  <a class="btn btn-dark btn-social mx-2" href="<?= social_media_links('twitter') ?>"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-dark btn-social mx-2" href="<?= social_media_links('facebook') ?>"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-dark btn-social mx-2" href="<?= social_media_links('linkedin') ?>"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                  <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                  <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+              </div>
+          </div>
+      </div>
+  </footer>
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="<?= asset_url('js/scripts.js') ?>"></script>
+  </body>
 
-<!-- Vendor JS Files -->
-<script src="<?= asset_url('vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?= asset_url('vendor/glightbox/js/glightbox.min.js') ?>"></script>
-<script src="<?= asset_url('vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
-<script src="<?= asset_url('vendor/swiper/swiper-bundle.min.js') ?>"></script>
-<script src="<?= asset_url('vendor/php-email-form/validate.js') ?>"></script>
-<script src="<?= asset_url('vendor/jquery.min.js') ?>"></script>
-<script src="<?= asset_url('vendor/sweetalert.min.js') ?>"></script>
-<script src="<?= asset_url('js/custom.js') ?>"></script>
-
-<!-- Template Main JS File -->
-<script src="<?= asset_url('js/main.js') ?>"></script>
-
-</body>
-
-</html>
+  </html>

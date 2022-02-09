@@ -1,23 +1,19 @@
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center shadow-lg">
-      <div class="container d-flex align-items-center">
-
-          <h1 class="logo me-auto"><a href="<?= base_url() ?>" class="fs-4"><img src="<?= asset_url('img/logo.png') ?>" alt=""></a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-          <nav id="navbar" class="navbar">
-              <ul>
-                  <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                  <li><a class="nav-link scrollto" href="#services">Why <?= business_info('buname') ?>?</a></li>
-                  <li><a class="nav-link scrollto" href="#about">How it works?</a></li>
-                  <li><a class="nav-link scrollto " href="#clients">Clients</a></li>
-                  <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
-                  <li><a class="getstarted scrollto" href="https://ship.logistify.in/login">Login</a></li>
-                  <li><a class="getstarted scrollto" href="https://ship.logistify.in/ship2bharat">Signup for free</a></li>
-              </ul>
-              <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
-
-      </div>
-  </header><!-- End Header -->
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="<?= base_url() ?>"><?= business_info('buname') ?></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

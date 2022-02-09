@@ -37,7 +37,7 @@ if (!function_exists('bu_address')) {
                 $msg = '+91 84549 54556';
                 break;
             case 'buname':
-                $msg = 'Ship2Bharat';
+                $msg = 'Inventevo Infotech';
                 break;
         }
         return $msg;
